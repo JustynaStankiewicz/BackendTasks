@@ -8,6 +8,12 @@ public class Task3 {
     public static void main(String[] args) {
         int n = 3;
         int[][] edges = {{4, 3}, {1, 4}, {5, 6}};
+        System.out.println("For the input:");
+        System.out.println("n");
+        for (int[] edge : edges) {
+            System.out.println(edge[0] + " " + edge[1]);
+        }
+        System.out.println("expected output is:");
         System.out.println(countSeparatedGraphs(n, edges));
     }
 

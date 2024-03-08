@@ -7,7 +7,9 @@ public class Task1 {
 
     public static void main(String[] args) {
         List<Integer> list = List.of(1, 10, 20, 20, 2, 5);
+        System.out.println("For the input:");
         System.out.println(list);
+        System.out.println("expected output is:");
         printListInfo(list);
     }
 

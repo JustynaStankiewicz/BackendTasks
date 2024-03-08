@@ -7,13 +7,15 @@ public class Task2 {
 
     public static void main(String[] args) {
         List<Integer> list = List.of(1, 2, 10, 7, 5, 3, 6, 6, 13, 0);
+        System.out.println("For the input:");
         System.out.println(list);
-        List<Pair> pairs = sumUp(list, 13);
+        List<Pair> pairs = getAllPairsThatSumUpToTarget(list, 13);
+        System.out.println("expected output is:");
         printPairs(pairs);
 
     }
 
-    public static List<Pair> sumUp(List<Integer> nums, int target) {
+    public static List<Pair> getAllPairsThatSumUpToTarget(List<Integer> nums, int target) {
         Map<Integer, Integer> hashmap = new HashMap<>();
         List<Pair> result = new ArrayList<>();
         for (int number : nums) {
